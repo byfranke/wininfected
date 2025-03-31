@@ -12,7 +12,7 @@ else
   exit 1
 fi
 
-if sudo cp wininfected /usr/bin/; then
+if sudo cp wininfected.sh /usr/bin/wininfected; then
   echo "WinInfected installed successfully."
   echo
   echo "Usage: sudo wininfected [LHOST] [LPORT] [--obfuscate]"
@@ -25,6 +25,7 @@ if sudo cp wininfected /usr/bin/; then
   echo "  -h, --help       Display this help message."
   echo
   echo "More information: https://github.com/byfranke/WinInfected"
+  echo " byfranke.com | 2025"
   echo
 else
   echo "Error: Failed to copy WinInfected to /usr/bin."
